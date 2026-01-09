@@ -7,6 +7,7 @@
 # -------------------------------------------------------
 # Affiche un message pour demander le nom du genre
 read -p "Entrez le nom du genre musical : " GENRE
+GENRE=$(echo "$GENRE" | tr '/' '_')
 
 # -------------------------------------------------------
 # CREATION DU DOSSIER DU GENRE
